@@ -1,6 +1,6 @@
 import "../../assets/scss/purchaseDetails/purchaseDetailsContent.scss";
 import gameItemImage from "../../assets/images/gameItem1.png";
-import { connectWallet } from "../../utils/commonFunc";
+import { connectWallet, disconnectWallet } from "../../utils/commonFunc";
 import { useEffect, useState } from "react";
 const PurchaseDetailsContent = () => {
   const [walletStatus, setWalletStatus] = useState("");
@@ -26,6 +26,7 @@ const PurchaseDetailsContent = () => {
   const disconnectWalletButton = async () => {
     setWalletAddress("");
     setWalletStatus("");
+    disconnectWallet();
   };
 
   return (

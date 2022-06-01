@@ -11,6 +11,7 @@ export const connectWallet = async () => {
   const REACT_APP_ADDRESS = process.env.REACT_APP_ADDRESS;
   console.log("chainid", chainId);
   console.log("REACT_APP_ADDRESS", REACT_APP_ADDRESS);
+
   if (window.ethereum) {
     try {
       const chain = await window.ethereum.request({ method: "eth_chainId" });
@@ -52,4 +53,15 @@ export const connectWallet = async () => {
       status: "uninstalled",
     };
   }
+};
+
+export const disconnectWallet = async () => {
+  await window.ethereum.request({
+    method: "wallet_requestPermissions",
+    params: [
+      {
+        eth_accounts: {},
+      },
+    ],
+  });
 };

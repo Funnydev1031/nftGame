@@ -17,6 +17,9 @@ root.render(
       domain="dev-9zut-zjy.us.auth0.com"
       clientId="xXdvX1e2qAYMSbVWreKZf1cYDtyYI5sI"
       redirectUri={window.location.origin}
+      // audience="https://main--incomparable-tiramisu-56e563.netlify.app/api/v2/"
+      audience="https://main--incomparable-tiramisu-56e563.netlify.app/"
+      scope="read:current_user update:current_user_metadata"
     >
       <App />
     </Auth0Provider>
