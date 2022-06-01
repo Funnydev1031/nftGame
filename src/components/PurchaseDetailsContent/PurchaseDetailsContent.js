@@ -15,7 +15,9 @@ const PurchaseDetailsContent = () => {
     console.log("walletResponse.balance", walletResponse.balance);
 
     if (!walletResponse.address) {
-      alert("Please install metamask.");
+      if (walletResponse.status == "uninstalled") {
+        alert("Please install metamask.");
+      }
     } else {
       alert("connected your wallet successfuly");
     }
