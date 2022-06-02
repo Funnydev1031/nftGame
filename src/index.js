@@ -15,13 +15,10 @@ root.render(
   <React.StrictMode>
     <Auth0Provider
       domain="dev-9zut-zjy.us.auth0.com"
-      // clientId="MfsFzNAtr8zVptMZAbbIioeF9Ua5ykfv"
       clientId="yunn6UVCKAMX4r9yxjsuwakyXZ5GVkaB"
-      // clientId="xXdvX1e2qAYMSbVWreKZf1cYDtyYI5sI"
       redirectUri={window.location.origin}
-      // audience="https://main--incomparable-tiramisu-56e563.netlify.app/api/v2/"
-      audience="https://main--incomparable-tiramisu-56e563.netlify.app/"
-      scope="read:current_user update:current_user_metadata"
+      audience="https://look-labs.uc.r.appspot.com/"
+      scope="read:stats"
     >
       <App />
     </Auth0Provider>
