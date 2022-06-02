@@ -15,7 +15,8 @@ root.render(
   <React.StrictMode>
     <Auth0Provider
       domain="dev-9zut-zjy.us.auth0.com"
-      clientId="yunn6UVCKAMX4r9yxjsuwakyXZ5GVkaB"
+      // clientId="yunn6UVCKAMX4r9yxjsuwakyXZ5GVkaB"
+      clientId="xXdvX1e2qAYMSbVWreKZf1cYDtyYI5sI"
       redirectUri={window.location.origin}
       audience="https://look-labs.uc.r.appspot.com/"
       scope="read:stats"
